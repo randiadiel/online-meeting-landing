@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 import db from "../db/db.json";
-require("../scss/index.scss");
+import "../scss/index.scss";
 
 const populateData = () => {
   const { title, subtitle, series } = db;
@@ -43,7 +43,6 @@ $(document).ready(function () {
     }, 1000);
     const stopTicker = () => {
       clearInterval(ticker);
-      console.log("hello");
     };
   });
 });
