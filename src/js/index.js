@@ -29,16 +29,22 @@ $(document).ready(function () {
         const s = document.getElementById("countdown-seconds");
         NOW.setSeconds(NOW.getSeconds() + 1);
         const deltaTime = new Date(EVENT_TIME - NOW);
+
         var days = Math.floor(deltaTime / (1000 * 60 * 60 * 24));
         var hours = Math.floor(
           (deltaTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         );
         var minutes = Math.floor((deltaTime % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((deltaTime % (1000 * 60)) / 1000);
-        d.innerHTML = days;
-        h.innerHTML = hours;
-        m.innerHTML = minutes;
-        s.innerHTML = seconds;
+        if (seconds < 11 && minutes === 0 && hours === 0 && days === 0) {
+          const main = document.getElementById("main");
+          main.style.borderRadius = "0";
+          main.style.animation = "animation 3s forwards";
+        }
+        d.innerHTML = (days < 0 ? "0" : days) + "d";
+        h.innerHTML = (hours < 0 ? "0" : hours) + "h";
+        m.innerHTML = (minutes < 0 ? "0" : minutes) + "m";
+        s.innerHTML = (seconds < 0 ? "0" : seconds) + "s";
       }
     }, 1000);
     const stopTicker = () => {
