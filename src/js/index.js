@@ -8,7 +8,8 @@ const populateData = () => {
   window.document.title = title;
   document.getElementById("title").innerHTML = title;
   document.getElementById("subtitle").innerHTML = subtitle;
-  document.getElementById("series").innerHTML = series;
+  document.getElementById("series").innerHTML = series.main;
+  document.getElementById("sub-series").innerHTML = series.sub;
 };
 
 $(document).ready(function () {

@@ -1,14 +1,17 @@
 {
   "url": "https://www.google.com",
   "time": {
-    "date": 13,
+    "date": 17,
     "month": 6,
     "year": 2020,
-    "hours": 2,
-    "minutes": 57,
+    "hours": 15,
+    "minutes": 46,
     "seconds": 0
   },
   "title": "BNCC Webinar Series",
   "subtitle": "Broaden Your Horizon",
-  "series": "What is Product Manager?"
+  "series": {
+    "main": "Reaching Our of Your",
+    "sub": "Comfort Zone"
+  }
 }
