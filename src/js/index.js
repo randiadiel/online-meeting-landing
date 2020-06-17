@@ -42,10 +42,10 @@ $(document).ready(function () {
           main.style.borderRadius = "0";
           main.style.animation = "animation 3s forwards";
         }
-        d.innerHTML = (days < 0 ? "0" : days) + "d";
-        h.innerHTML = (hours < 0 ? "0" : hours) + "h";
-        m.innerHTML = (minutes < 0 ? "0" : minutes) + "m";
-        s.innerHTML = (seconds < 0 ? "0" : seconds) + "s";
+        d.innerHTML = days < 0 ? "0" : days;
+        h.innerHTML = hours < 0 ? "0" : hours;
+        m.innerHTML = minutes < 0 ? "0" : minutes;
+        s.innerHTML = seconds < 0 ? "0" : seconds;
       }
     }, 1000);
     const stopTicker = () => {
