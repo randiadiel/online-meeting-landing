@@ -104,7 +104,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! exports provided: url, time, title, subtitle, series, default */
 /***/ (function(module) {
 
-eval("module.exports = JSON.parse(\"{\\\"url\\\":\\\"https://meet.google.com/xwp-eqdu-iaw\\\",\\\"time\\\":{\\\"date\\\":17,\\\"month\\\":6,\\\"year\\\":2020,\\\"hours\\\":14,\\\"minutes\\\":15,\\\"seconds\\\":0},\\\"title\\\":\\\"BNCC Webinar Series\\\",\\\"subtitle\\\":\\\"Broaden Your Horizon\\\",\\\"series\\\":{\\\"main\\\":\\\"Reaching Our of Your\\\",\\\"sub\\\":\\\"Comfort Zone\\\"}}\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvZGIvZGIuanNvbi5qcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/db/db.json\n");
+eval("module.exports = JSON.parse(\"{\\\"url\\\":\\\"https://meet.google.com/xwp-eqdu-iaw\\\",\\\"time\\\":{\\\"date\\\":17,\\\"month\\\":6,\\\"year\\\":2020,\\\"hours\\\":18,\\\"minutes\\\":15,\\\"seconds\\\":0},\\\"title\\\":\\\"BNCC Webinar Series\\\",\\\"subtitle\\\":\\\"Broaden Your Horizon\\\",\\\"series\\\":{\\\"main\\\":\\\"Reaching Out of Your\\\",\\\"sub\\\":\\\"Comfort Zone\\\"}}\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvZGIvZGIuanNvbi5qcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/db/db.json\n");
 
 /***/ }),
 

@@ -98,6 +98,7 @@ main {
     & #title {
       text-transform: uppercase;
       font-family: "Ultra";
+      letter-spacing: 1px;
     }
     & #subtitle {
       font-family: "Light";
@@ -112,6 +113,7 @@ main {
   & #series {
     font-family: "Ultra";
     font-size: xx-large;
+    letter-spacing: 1px;
   }
   & #sub-series {
     font-family: "Light";

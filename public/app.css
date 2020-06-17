@@ -89,7 +89,8 @@ main {
     justify-content: center; }
     main .title-container #title {
       text-transform: uppercase;
-      font-family: "Ultra"; }
+      font-family: "Ultra";
+      letter-spacing: 1px; }
     main .title-container #subtitle {
       font-family: "Light"; }
   @media only screen and (max-width: 576px) {
@@ -98,7 +99,8 @@ main {
       flex-direction: column; } }
   main #series {
     font-family: "Ultra";
-    font-size: xx-large; }
+    font-size: xx-large;
+    letter-spacing: 1px; }
   main #sub-series {
     font-family: "Light"; }
   main .redirect {
