@@ -1,4 +1,5 @@
 import $ from "jquery";
+const path = require("path");
 
 import db from "../db/db.json";
 import "../scss/index.scss";
@@ -12,8 +13,22 @@ const populateData = () => {
   document.getElementById("sub-series").innerHTML = series.sub;
 };
 
+const handleOnLoad = () => {
+  const objects = document.getElementById("main");
+  console.log(objects);
+  const img = new Image();
+  img.src = path.resolve(__dirname, "public/assets/bg.png");
+  img.onload = () => {
+    objects.classList.remove("asyncImg");
+    objects.classList.add("notAsyncImg");
+  };
+  const iframe = document.getElementById("iframe");
+  iframe.src = "https://www.filemagz.com/";
+};
+
 $(document).ready(function () {
   populateData();
+  handleOnLoad();
   const { date, month, year, hours, minutes, seconds } = db.time;
   const EVENT_TIME = new Date(year, month - 1, date, hours, minutes, seconds);
   $.get(

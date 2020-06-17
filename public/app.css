@@ -33,15 +33,23 @@
 body,
 html {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: #095aa8; }
+
+.asyncImg {
+  background: url("./assets/async_bg.png");
+  background-size: cover; }
+
+.notAsyncImg {
+  background: url("./assets/bg.png");
+  background-size: cover; }
 
 main {
   position: relative;
   padding: 3rem 5rem;
   width: 100%;
   height: 100vh;
-  background: url("./assets/bg.png");
-  background-size: cover;
+  background: #095aa8;
   display: flex;
   justify-content: center;
   align-items: start;
