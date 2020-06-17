@@ -61,14 +61,26 @@ main {
     main .social-container {
       display: flex;
       align-items: center;
-      padding: 0 1rem; }
+      padding: 0 1rem;
+      text-decoration: none; }
       main .social-container img {
         width: 1rem;
         margin-right: 0.5rem; }
+    @media only screen and (max-width: 576px) {
+      main .social-container {
+        padding: 0 0.2rem; }
+        main .social-container span {
+          display: none; } }
+    @media only screen and (max-width: 992px) {
+      main .social-container {
+        padding: 0 0.2rem; }
+        main .social-container span {
+          display: none; } }
   main .scroll {
     position: absolute;
     right: 50%;
-    bottom: 3rem; }
+    bottom: 3rem;
+    transform: translate(50%, 0); }
     main .scroll img {
       width: 1rem; }
   main .title-container {
@@ -80,6 +92,10 @@ main {
       font-family: "Ultra"; }
     main .title-container #subtitle {
       font-family: "Light"; }
+  @media only screen and (max-width: 576px) {
+    main .title-container {
+      align-items: flex-start;
+      flex-direction: column; } }
   main #series {
     font-family: "Ultra";
     font-size: xx-large; }
@@ -90,14 +106,20 @@ main {
   main .countdown-container {
     display: flex; }
     main .countdown-container div {
-      min-width: 4rem;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      flex-direction: column; }
     main .countdown-container .countdown-separator {
       margin: 0 1rem; }
-    main .countdown-container span {
+    main .countdown-container .number,
+    main .countdown-container .countdown-separator {
       font-size: xx-large;
-      font-family: "Medium"; }
+      font-family: "Medium";
+      text-align: center; }
+    main .countdown-container .text {
+      font-size: small;
+      font-family: "Light";
+      text-align: center; }
   main .countdown-text {
     display: flex;
     justify-content: space-between; }
@@ -105,15 +127,15 @@ main {
       width: 4rem;
       text-align: center; }
 
-@keyframes animation {
-  from {
-    min-width: 0;
-    min-height: 0;
-    border-radius: 10px; }
-  to {
-    min-width: 100vw;
-    min-height: 100vh;
-    border-radius: 0px; } }
+@media only screen and (max-width: 576px) {
+  main {
+    padding: 2rem 2rem; }
+    main .logo-bncc {
+      left: 2rem;
+      top: 2rem; }
+    main .social {
+      right: 2rem;
+      top: 2rem; } }
 
 iframe {
   width: 100%;

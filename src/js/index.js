@@ -6,7 +6,7 @@ import "../scss/index.scss";
 const populateData = () => {
   const { title, subtitle, series } = db;
   window.document.title = title;
-  document.getElementById("title").innerHTML = title;
+  document.getElementById("title").innerHTML = title + "&nbsp;:&nbsp;";
   document.getElementById("subtitle").innerHTML = subtitle;
   document.getElementById("series").innerHTML = series.main;
   document.getElementById("sub-series").innerHTML = series.sub;

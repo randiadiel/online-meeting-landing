@@ -59,9 +59,26 @@ main {
       display: flex;
       align-items: center;
       padding: 0 1rem;
+      text-decoration: none;
       & img {
         width: 1rem;
         margin-right: 0.5rem;
+      }
+    }
+    @include mobile {
+      &-container {
+        padding: 0 0.2rem;
+        & span {
+          display: none;
+        }
+      }
+    }
+    @include tablet {
+      &-container {
+        padding: 0 0.2rem;
+        & span {
+          display: none;
+        }
       }
     }
   }
@@ -69,6 +86,7 @@ main {
     position: absolute;
     right: 50%;
     bottom: 3rem;
+    transform: translate(50%, 0);
     & img {
       width: 1rem;
     }
@@ -85,6 +103,12 @@ main {
       font-family: "Light";
     }
   }
+  @include mobile {
+    & .title-container {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
   & #series {
     font-family: "Ultra";
     font-size: xx-large;
@@ -97,18 +121,26 @@ main {
   }
   & .countdown {
     &-container {
+      display: flex;
       & div {
-        min-width: 4rem;
         display: flex;
         justify-content: center;
+
+        flex-direction: column;
       }
       & .countdown-separator {
         margin: 0 1rem;
       }
-      display: flex;
-      & span {
+      & .number,
+      .countdown-separator {
         font-size: xx-large;
         font-family: "Medium";
+        text-align: center;
+      }
+      & .text {
+        font-size: small;
+        font-family: "Light";
+        text-align: center;
       }
     }
     &-text {
@@ -122,16 +154,19 @@ main {
   }
 }
 
-@keyframes animation {
-  from {
-    min-width: 0;
-    min-height: 0;
-    border-radius: 10px;
-  }
-  to {
-    min-width: 100vw;
-    min-height: 100vh;
-    border-radius: 0px;
+@include mobile {
+  $vertical-padding: 2rem;
+  $side-padding: 2rem;
+  main {
+    padding: $vertical-padding $side-padding;
+    & .logo-bncc {
+      left: $side-padding;
+      top: $vertical-padding;
+    }
+    & .social {
+      right: $side-padding;
+      top: $vertical-padding;
+    }
   }
 }
 
