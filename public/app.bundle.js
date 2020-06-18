@@ -126,7 +126,7 @@ eval("// shim for using process in browser\nvar process = module.exports = {};\n
 /*! exports provided: url, time, title, subtitle, series, default */
 /***/ (function(module) {
 
-eval("module.exports = JSON.parse(\"{\\\"url\\\":\\\"https://meet.google.com/xwp-eqdu-iaw\\\",\\\"time\\\":{\\\"date\\\":19,\\\"month\\\":6,\\\"year\\\":2020,\\\"hours\\\":15,\\\"minutes\\\":0,\\\"seconds\\\":0},\\\"title\\\":\\\"BNCC Webinar Series\\\",\\\"subtitle\\\":\\\"Broaden Your Horizon\\\",\\\"series\\\":{\\\"main\\\":\\\"Reaching Out of Your\\\",\\\"sub\\\":\\\"Comfort Zone\\\"}}\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvZGIvZGIuanNvbi5qcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/db/db.json\n");
+eval("module.exports = JSON.parse(\"{\\\"url\\\":\\\"https://meet.google.com/pcx-tnez-vwn\\\",\\\"time\\\":{\\\"date\\\":19,\\\"month\\\":6,\\\"year\\\":2020,\\\"hours\\\":13,\\\"minutes\\\":20,\\\"seconds\\\":0},\\\"title\\\":\\\"BNCC Webinar Series\\\",\\\"subtitle\\\":\\\"Broaden Your Horizon\\\",\\\"series\\\":{\\\"main\\\":\\\"Reaching Out of Your\\\",\\\"sub\\\":\\\"Comfort Zone\\\"}}\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvZGIvZGIuanNvbi5qcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/db/db.json\n");
 
 /***/ }),
 
