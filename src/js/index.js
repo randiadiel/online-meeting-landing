@@ -35,11 +35,16 @@ $(document).ready(function () {
     "https://worldtimeapi.org/api/timezone/Asia/Jakarta",
     (data, status) => {
       const NOW = new Date(data.datetime);
-      const { url } = db;
+      const { bs, k_a, b, u } = db;
+      const o0 = window.atob(k_a);
+      const yz = window.atob(b);
+      const j9 = window.atob(u);
+      const z = window.atob(bs);
+      const url = z + j9 + "-" + o0 + "-" + yz;
       let ticker = setInterval(function () {
         if (NOW >= EVENT_TIME) {
           stopTicker();
-          window.location.href = url;
+          window.location.href = url.toString();
         } else {
           const d = document.getElementById("countdown-days");
           const h = document.getElementById("countdown-hours");

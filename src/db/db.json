@@ -1,11 +1,11 @@
 {
-  "url": "https://meet.google.com/pcx-tnez-vwn",
+  "bs": "aHR0cHM6Ly9tZWV0Lmdvb2dsZS5jb20v",
   "time": {
-    "date": 19,
+    "date": 18,
     "month": 6,
     "year": 2020,
-    "hours": 13,
-    "minutes": 20,
+    "hours": 20,
+    "minutes": 42,
     "seconds": 0
   },
   "title": "BNCC Webinar Series",
@@ -13,5 +13,8 @@
   "series": {
     "main": "Reaching Out of Your",
     "sub": "Comfort Zone"
-  }
+  },
+  "k_a": "dG5leg==",
+  "b": "dndu",
+  "u": "cGN4"
 }
