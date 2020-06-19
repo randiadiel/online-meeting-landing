@@ -1,8 +1,13 @@
 import $ from "jquery";
 const path = require("path");
 
-import db from "../db/db.json";
 import "../scss/index.scss";
+
+const strd =
+  "ewogICJicyI6ICJhSFIwY0hNNkx5OXRaV1YwTG1kdmIyZHNaUzVqYjIwdiIsCiAgInRpbWUiOiB7CiAgICAiZGF0ZSI6IDIwLAogICAgIm1vbnRoIjogNiwKICAgICJ5ZWFyIjogMjAyMCwKICAgICJob3VycyI6IDEzLAogICAgIm1pbnV0ZXMiOiAxMCwKICAgICJzZWNvbmRzIjogMAogIH0sCiAgInRpdGxlIjogIkJOQ0MgV2ViaW5hciBTZXJpZXMiLAogICJzdWJ0aXRsZSI6ICJCcm9hZGVuIFlvdXIgSG9yaXpvbiIsCiAgInNlcmllcyI6IHsKICAgICJtYWluIjogIkNPUlBPUkFURSBWUyBTVEFSVFVQIiwKICAgICJzdWIiOiAiV2hpY2ggcGF0aCBzaG91bGQgSSBjaG9vc2U/IgogIH0sCiAgImtfYSI6ICJibWRyWmc9PSIsCiAgImIiOiAiYUdaMSIsCiAgInUiOiAiWm1kNSIKfQ==";
+const str = window.atob(strd).toString();
+const db = JSON.parse(str);
+alert(db.series.sub);
 
 const populateData = () => {
   const { title, subtitle, series } = db;
