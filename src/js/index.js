@@ -7,7 +7,6 @@ const strd =
   "ewogICJicyI6ICJodHRwczovL3pvb20udXMvai84NTE4MzQ5NDIwIiwKICAidGltZSI6IHsKICAgICJkYXRlIjogMjAsCiAgICAibW9udGgiOiA2LAogICAgInllYXIiOiAyMDIwLAogICAgImhvdXJzIjogMTMsCiAgICAibWludXRlcyI6IDEwLAogICAgInNlY29uZHMiOiAwCiAgfSwKICAidGl0bGUiOiAiQk5DQyBDU1IiLAogICJzdWJ0aXRsZSI6ICJEZWZpbmUgUHJvYmxlbSBTb2x1dGlvbiBUaHJvdWdoIFRlY2hub2xvZ3kiLAogICJzZXJpZXMiOiB7CiAgICAibWFpbiI6ICJQaXZvdGluZyBZb3VyIE5leHQgVGFsZW50IiwKICAgICJzdWIiOiAiV2l0aCBMYW5ueSBXaWpheWEgKExpbmtlZGluIFRhbGVudCBTb2x1dGlvbiBFeHBlcnQgZm9yIEluZG9uZXNpYSkiCiAgfQp9";
 const str = window.atob(strd).toString();
 const db = JSON.parse(str);
-alert(db.series.sub);
 
 const populateData = () => {
   const { title, subtitle, series } = db;
