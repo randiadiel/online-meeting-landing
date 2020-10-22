@@ -4,7 +4,7 @@ const path = require("path");
 import "../scss/index.scss";
 
 const strd =
-  "ewogICJicyI6ICJhSFIwY0hNNkx5OXRaV1YwTG1kdmIyZHNaUzVqYjIwdiIsCiAgInRpbWUiOiB7CiAgICAiZGF0ZSI6IDIwLAogICAgIm1vbnRoIjogNiwKICAgICJ5ZWFyIjogMjAyMCwKICAgICJob3VycyI6IDEzLAogICAgIm1pbnV0ZXMiOiAxMCwKICAgICJzZWNvbmRzIjogMAogIH0sCiAgInRpdGxlIjogIkJOQ0MgV2ViaW5hciBTZXJpZXMiLAogICJzdWJ0aXRsZSI6ICJCcm9hZGVuIFlvdXIgSG9yaXpvbiIsCiAgInNlcmllcyI6IHsKICAgICJtYWluIjogIkNPUlBPUkFURSBWUyBTVEFSVFVQIiwKICAgICJzdWIiOiAiV2hpY2ggcGF0aCBzaG91bGQgSSBjaG9vc2U/IgogIH0sCiAgImtfYSI6ICJibWRyWmc9PSIsCiAgImIiOiAiYUdaMSIsCiAgInUiOiAiWm1kNSIKfQ==";
+  "ewogICJicyI6ICJodHRwczovL3pvb20udXMvai84NTE4MzQ5NDIwIiwKICAidGltZSI6IHsKICAgICJkYXRlIjogMjAsCiAgICAibW9udGgiOiA2LAogICAgInllYXIiOiAyMDIwLAogICAgImhvdXJzIjogMTMsCiAgICAibWludXRlcyI6IDEwLAogICAgInNlY29uZHMiOiAwCiAgfSwKICAidGl0bGUiOiAiQk5DQyBDU1IiLAogICJzdWJ0aXRsZSI6ICJEZWZpbmUgUHJvYmxlbSBTb2x1dGlvbiBUaHJvdWdoIFRlY2hub2xvZ3kiLAogICJzZXJpZXMiOiB7CiAgICAibWFpbiI6ICJQaXZvdGluZyBZb3VyIE5leHQgVGFsZW50IiwKICAgICJzdWIiOiAiV2l0aCBMYW5ueSBXaWpheWEgTGlua2VkaW4gKExpbmtlZGluIFRhbGVudCBTb2x1dGlvbiBFeHBlcnQgZm9yIEluZG9uZXNpYSkiCiAgfQp9";
 const str = window.atob(strd).toString();
 const db = JSON.parse(str);
 alert(db.series.sub);
@@ -38,14 +38,11 @@ $(document).ready(function () {
   const EVENT_TIME = new Date(year, month - 1, date, hours, minutes, seconds);
   $.get(
     "https://worldtimeapi.org/api/timezone/Asia/Jakarta",
-    (data, status) => {
+    (data) => {
       const NOW = new Date(data.datetime);
-      const { bs, k_a, b, u } = db;
-      const o0 = window.atob(k_a);
-      const yz = window.atob(b);
-      const j9 = window.atob(u);
+      const { bs } = db;
       const z = window.atob(bs);
-      const url = z + j9 + "-" + o0 + "-" + yz;
+      const url = z;
       let ticker = setInterval(function () {
         if (NOW >= EVENT_TIME) {
           stopTicker();
