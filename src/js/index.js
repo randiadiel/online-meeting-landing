@@ -4,7 +4,7 @@ const path = require("path");
 import "../scss/index.scss";
 
 const strd =
-  "ewogICJicyI6ICJodHRwczovL3pvb20udXMvai84NTE4MzQ5NDIwIiwKICAidGltZSI6IHsKICAgICJkYXRlIjogMjQsCiAgICAibW9udGgiOiAxMCwKICAgICJ5ZWFyIjogMjAyMCwKICAgICJob3VycyI6IDEzLAogICAgIm1pbnV0ZXMiOiAwLAogICAgInNlY29uZHMiOiAwCiAgfSwKICAidGl0bGUiOiAiQk5DQyBDU1IgMjAyMCIsCiAgInN1YnRpdGxlIjogIkFkanVzdGluZyB0byB0aGUgTmV3IE5vcm1hbCB3aXRoIEdvamVrIiwKICAic2VyaWVzIjogewogICAgIm1haW4iOiAiUGl2b3RpbmcgWW91ciBOZXh0IFRhbGVudCIsCiAgICAic3ViIjogIldpdGggTGFubnkgV2lqYXlhIChMaW5rZWRpbiBUYWxlbnQgU29sdXRpb24gRXhwZXJ0IGZvciBJbmRvbmVzaWEpIgogIH0KfQ==";
+  "ewogICJicyI6ICJodHRwczovL3pvb20udXMvai84NTE4MzQ5NDIwIiwKICAidGltZSI6IHsKICAgICJkYXRlIjogMjgsCiAgICAibW9udGgiOiAxMCwKICAgICJ5ZWFyIjogMjAyMCwKICAgICJob3VycyI6IDEzLAogICAgIm1pbnV0ZXMiOiAwLAogICAgInNlY29uZHMiOiAwCiAgfSwKICAidGl0bGUiOiAiQk5DQyBDU1IgMjAyMCIsCiAgInN1YnRpdGxlIjogIkFkanVzdGluZyB0byB0aGUgTmV3IE5vcm1hbCB3aXRoIEdvamVrIiwKICAic2VyaWVzIjogewogICAgIm1haW4iOiAiVGhlIEFydCBvZiBDcml0aWNhbCBUaGlua2luZyA0LjAgIiwKICAgICJzdWIiOiAiV2l0aCBBbGRpc3RpIFNlcHNyaSBBbXNhcyAoUGVvcGxlICYgQnVzaW5lc3MgUGFydG5lciBNYW5hZ2VyIGF0IEtpdGFCaXNhLmNvbSkiCiAgfQp9";
 const str = window.atob(strd).toString();
 const db = JSON.parse(str);
 
@@ -21,7 +21,8 @@ const handleOnLoad = () => {
   const objects = document.getElementById("main");
   console.log(objects);
   const img = new Image();
-  img.src = path.resolve(__dirname, "public/assets/bg.png");
+  console.log(window.location + "public/assets/bg.png");
+  img.src = window.location.hostname + "public/assets/bg.png"
   img.onload = () => {
     objects.classList.remove("asyncImg");
     objects.classList.add("notAsyncImg");
