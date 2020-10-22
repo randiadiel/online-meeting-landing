@@ -4,7 +4,7 @@ const path = require("path");
 import "../scss/index.scss";
 
 const strd =
-  "ewogICJicyI6ICJodHRwczovL3pvb20udXMvai84NTE4MzQ5NDIwIiwKICAidGltZSI6IHsKICAgICJkYXRlIjogMjAsCiAgICAibW9udGgiOiA2LAogICAgInllYXIiOiAyMDIwLAogICAgImhvdXJzIjogMTMsCiAgICAibWludXRlcyI6IDEwLAogICAgInNlY29uZHMiOiAwCiAgfSwKICAidGl0bGUiOiAiQk5DQyBDU1IiLAogICJzdWJ0aXRsZSI6ICJEZWZpbmUgUHJvYmxlbSBTb2x1dGlvbiBUaHJvdWdoIFRlY2hub2xvZ3kiLAogICJzZXJpZXMiOiB7CiAgICAibWFpbiI6ICJQaXZvdGluZyBZb3VyIE5leHQgVGFsZW50IiwKICAgICJzdWIiOiAiV2l0aCBMYW5ueSBXaWpheWEgKExpbmtlZGluIFRhbGVudCBTb2x1dGlvbiBFeHBlcnQgZm9yIEluZG9uZXNpYSkiCiAgfQp9";
+  "ewogICJicyI6ICJodHRwczovL3pvb20udXMvai84NTE4MzQ5NDIwIiwKICAidGltZSI6IHsKICAgICJkYXRlIjogMjQsCiAgICAibW9udGgiOiAxMCwKICAgICJ5ZWFyIjogMjAyMCwKICAgICJob3VycyI6IDEzLAogICAgIm1pbnV0ZXMiOiAwLAogICAgInNlY29uZHMiOiAwCiAgfSwKICAidGl0bGUiOiAiQk5DQyBDU1IgMjAyMCIsCiAgInN1YnRpdGxlIjogIkFkanVzdGluZyB0byB0aGUgTmV3IE5vcm1hbCB3aXRoIEdvamVrIiwKICAic2VyaWVzIjogewogICAgIm1haW4iOiAiUGl2b3RpbmcgWW91ciBOZXh0IFRhbGVudCIsCiAgICAic3ViIjogIldpdGggTGFubnkgV2lqYXlhIChMaW5rZWRpbiBUYWxlbnQgU29sdXRpb24gRXhwZXJ0IGZvciBJbmRvbmVzaWEpIgogIH0KfQ==";
 const str = window.atob(strd).toString();
 const db = JSON.parse(str);
 
@@ -40,8 +40,7 @@ $(document).ready(function () {
     (data) => {
       const NOW = new Date(data.datetime);
       const { bs } = db;
-      const z = window.atob(bs);
-      const url = z;
+      const url = bs;
       let ticker = setInterval(function () {
         if (NOW >= EVENT_TIME) {
           stopTicker();
